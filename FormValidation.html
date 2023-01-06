@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedbackForm</title>
+    <link rel="stylesheet" href="css/feed.css">
+</head>
+<body>
+    <h2>FeedbackForm</h2>
+    <form name="feedbackform">
+        <div class="feed">
+      Enter your name: <input type="text" placeholder="Enter your Fullname" name="fullname" required>
+        </div>
+        <div class="feed">
+            Enter Your Email: <input type="email" placeholder="dvbc@hav.com" name="email" required>
+         </div>
+       
+        <p>What Kind Of Feedback Choose It</p>
+        <div class="type">
+          <input type="radio" value="general-feedback" name="type">
+          <label for="general-feedback">general feedback</label>
+        </div>
+        <div class="type">
+            <input type="radio" value="techinal-support"name="type">
+            <label for="techinal-support">technical support</label>
+            
+        </div>
+        <div class="type">
+            <input type="radio" value="contribution"name="type">
+            <label for="contribution">contribution</label>
+            
+        </div>
+        
+        
+        <p>Enter your Feedback</p>
+        <div class="feed">
+         <textarea placeholder="enter your feedbacks " rows="5" name="description" required></textarea>
+        </div>
+        <div class="terms" >
+            <label for="terms">I accept your terms and conditions
+                <input type="checkbox" name="terms" required>
+            </label>
+        </div>
+        <div class="btn">
+            <button>submit</button>
+        </div>
+    </form>
+    <script src="javascript/index.js"></script>
+</body>
+</html>
